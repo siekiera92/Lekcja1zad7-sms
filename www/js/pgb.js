@@ -24,18 +24,15 @@ var app = {
         var success = function () { alert('Message sent successfully'); };
         var error = function (e) { alert('Message Failed:' + e); };
         sms.send(number, message, options, success, error);
-    }
-};
 
-var app = {
-    checkSMSPermission: function() {
+        checkSMSPermission: function() {
         var success = function (hasPermission) { 
             if (hasPermission) {
                 sms.send(...);
             }
             else {
 
-            	alert('Potrzebne pozwolenie')
+            	alert('Potrzebne pozwolenie');
                 // show a helpful message to explain why you need to require the permission to send a SMS
                 // read http://developer.android.com/training/permissions/requesting.html#explain for more best practices
             }
@@ -43,4 +40,6 @@ var app = {
         var error = function (e) { alert('Something went wrong:' + e); };
         sms.hasPermission(success, error);
     }
+    }
 };
+
