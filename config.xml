@@ -4,8 +4,8 @@
 		id          = "myfirstapp"
         version     = "1.0.0" >
 
-    <name>Network</name>
-    <description>Sprawdza połączenie z internetem</description>
+    <name>SMS</name>
+    <description>Aplikacja do wysyłania sms-ów</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
 		Piotr Siekierski
 	</author>
